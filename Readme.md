@@ -26,7 +26,7 @@ Se necesita diseñar un específico flujo de trabajo completo. Se puede determin
 Así que primero determinaremos todo con respecto a la conversación y preguntas solicitadas frecuentes y el script de respuestas a esas preguntas, luego obtendremos el _plug_ en la conversación para _lambda_ y finalmente desplegar esto en cualquier sitio web o integrar con nuestro propio sitio web.
 
 <p align="center">
-<img src="images/chatbot_with_amazon_lex.PNG">
+<img src="images/chatbot_with_amazon_lex.png">
 </p>
 
 La entrada va a ser un usuario que intenta ordenar flores y luego esa consulta va a ser trasferido al _Servidor Amazon EC2_ desde el cual será pasado a _Amazon Lex_ que luego lo envía al _servidor lambda_ para procesar, lambda no es más que una plataforma imformática de servicio que vamos a usar para procesar las solicitudes, así que en lugar de implementar un servidor completo vamos a usar los servicios de lambda para procesar solicitudes de servicio y luego enviar a _Amazon Cloud Watch_ para monitoreo y una vez que su solicitud haya procesado va a ser enviado de vuelta a _Amazon Lex_ y finalmente intermitiendo a su usuario final. Así, ques esto es toda la arquitectura que usará _Amazon Lambda, Amazon Lex y Amazon Cognito_ para comunicarse con una aplicación dotnet que finalmente se implementará en una instancia EC2 nuevamente.
@@ -38,7 +38,7 @@ Se creará un bot de chat de _dotnet core_ usando Amazon Lex. Como objetivo, se 
 Un **chatbot** no es más que un programa de computadora que está construido para establecer idealmente una conversación donde hay una entrada y salida en lenguaje natural a través del habla o texto al usuario final. El bot básicamente debería entender las necesidades del usuario, la intención básica del usuario y enviar una adecuada respuesta basada en las políticas de su organización o negocios.
 
 <p align="center">
-<img src="images/chatbot.jpg">
+<img src="images/chatbot.jpg" height="510">
 </p>
 
 Ahora un par de _bots_ de chat de datos básicamente eliminan mucha redundancia en un determinado sitio web y a menudo usan como agentes de conversación que imitan lo escrito o habla humana con el fin de simular una interacción con la persona real de modo que hay dos formas principales en que los chatbots se ofrecen a los visitantes, uno es a través de aplicaciones web y el segundo a través de aplicaciones independientes en una implementación más avanzada, un chatbor puede ser potencialmente impulsado por ML o aprendizaje automático para detectar conversaciones más complejas.
@@ -176,7 +176,7 @@ El test funciona corecctamente en la consola de Amazon. Se ha podido realizar co
 AWS CloudFormation permite usar lenguajes de programación o un archivo de texto simple para modelar y aprovisionar todos los recursos que necesitas para las aplicaciones en todas las regiones y cuentas de forma muy automatizada y la transformación de manera segura. Es básicamente para construir tu plan.
 
 <p align="center">
-<img src="images/AWS_CloudFormation.PNG" height="500">
+<img src="images/AWS_CloudFormation.png" height="500">
 </p>
 
 ¿Qué quiere decir con un plan? Veremos un ejemplo, cuando estamos desplegando un servicio, primero necesitamos configurar un servidor, así que para eso se necesita configurar nuestro _servidor EC2,_ ahora la aplicación también puede necesitar una base de datos, por lo tanto, necesitamos establecer un servicio RDS, aparte de eso, también necesitamos configurar una IP elástica, una base de datos completa, así como un servicio de caché elástica, por lo que puede haber 10 servicios diferentes que deben implementarse para toda la aplicación se ejecute. Para eso tenemos que implementar todos y cada uno de los servicios que acabo de mencionar uno por uno manualmente. Todo se puede implementar, todos juntos usando la _formación de nubes._ 
@@ -364,7 +364,7 @@ Esto nos direccionará al repositorio en [github](https://github.com/aws-samples
 8. Finalmente, eliminar los recursos, seguir el paso 2 de la sección de _Deploy_ llamada _Step 2: Clean Up & Delete Resources_
 
 <p align="center">
-<img src="images/clean.PNG">
+<img src="images/clean.PNG" height="500">
 </p> 
 
 ## Clean 
